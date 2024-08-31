@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .canto {
+            position: fixed;
+            left: 0;
+            /* Ou use "right: 0" para o canto direito */
+        }
+
+    </style>
+</head>
+<body>
+    <img src="imagens/agenda-removebg-preview.png" alt="" width="300" height="300" class="canto">
+    <div class="container">
+        <h1>𝕵𝖆𝖗𝖛𝖎𝖘 - 𝕸𝖊𝖚 𝕬𝖘𝖘𝖎𝖘𝖙𝖊𝖓𝖙𝖊 𝕻𝖊𝖘𝖘𝖔𝖆𝖑</h1>
+        <ul id="task-list">
+            <!-- Tarefas serão adicionadas aqui -->
+        </ul>
+    </div>
+
+    <!-- Menu Flutuante -->
+    <div class="floating-menu" id="add-task-btn">
+        <span>+</span>
+    </div>
+
+    <!-- Modal de Adição de Tarefas -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <h2>𝒜𝒹𝒾𝒸𝒾ℴ𝓃𝒶𝓇 𝒯𝒶𝓇ℯ𝒻𝒶</h2>
+            <input type="text" id="task-name" placeholder="Nome da Tarefa">
+            <input type="color" id="task-color" value="#ff0000">
+            <input type="date" id="task-date">
+            <input type="time" id="task-time">
+            <select id="task-priority">
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+            <button id="save-task">Salvar Tarefa</button>
+            <button id="close-modal">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
